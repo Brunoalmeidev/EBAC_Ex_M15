@@ -1,0 +1,37 @@
+@use '../config/variables.scss';
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: variables.$margin-left-medium;
+
+        a {
+            color: variables.$menu-link-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: variables.$product-border-radius;
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: variables.$product-button-background-color;
+    color: variables.$menu-link-color;
+    text-align: center;
+    padding: variables.$padding-small;
+    border-radius: variables.$product-button-border-radius;
+    margin-top: variables.$padding-small;
+    text-decoration: none;
+
+    &:hover {
+        background-color: variables.$product-button-hover-color;
+    }
+}
